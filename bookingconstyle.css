@@ -22,11 +22,9 @@
 .header-title {
     color: #5E6073;
     text-align: center;
-    justify-content: center;
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
-     /* Center horizontally */
+    font-family: 'Playfair Display', serif; 
 }
 .booking-confirmation {
     width: 435px;
@@ -45,6 +43,7 @@
 }
 
 .confirmation-text {
+    padding: 20px;
     text-align: center;
     color: #5E6073;
     font-size: 36px;
@@ -54,6 +53,9 @@
 }
 
 .details {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -61,19 +63,36 @@
     display: flex;
 }
 
-.detail {
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    align-items: center;
+    gap: 135px;
+}
+
+.column {
+    padding: 20px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 29px;
-    display: inline-flex;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .label {
     text-align: center;
     color: #5E6073;
-    font-size: 10px;
-    font-family: Playfair Display;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
     font-weight: 900;
     word-wrap: break-word;
 }
@@ -82,7 +101,7 @@
     text-align: center;
     color: #5E6073;
     font-size: 16px;
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
     word-wrap: break-word;
 }
